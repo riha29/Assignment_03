@@ -13,41 +13,44 @@
         <!-- tailwind cdn -->
         <script src="https://cdn.tailwindcss.com"></script>
     
-        <!-- tailwind script
+        <!-- tailwind script -->
         <script>
             tailwind.config = {
               theme: {
                 extend: {
                   colors: {
-                    'green': '#ABEF5F',
+                    sobuj: '#ABEF5F',
                   },
                 },
               },
+              daisyui: {
+                themes: false,},
             }
-          </script> -->
+          </script>
     
         <!-- daisyui cdn -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
     
         <!-- font awesome cdn -->
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     </head>
+    
     <body>
         
         <header class="lg:mx-16 lg:my-4">
             <div class="navbar">
                 <div class="navbar-start">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    <h1 class="text-xl">Rinterio</h1>
+                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-300 text-black"> </i>
+                    <h1 class="text-xl pl-1"> Rinterio</h1>
                 </div>
                 
                 <div class="navbar-center">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="font-bold">Home</a></li>
                         <li><a>Services</a></li>
-                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
                         <li><a>Contact Us</a></li>
                     </ul>
@@ -86,7 +89,7 @@
                         </svg>
                     </div>
     
-                    <button class="btn mx-8">Book Consult</button>
+                    <button class="btn mx-8 bg-lime-300 rounded-3xl ">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
                 </div>
             </div>
         </header>
@@ -107,7 +110,7 @@
                 <p>
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
-                <button class="btn my-4 mx-8">View Details</button>
+                <button class="btn rounded-3xl bg-lime-300 my-4 mx-8">View Details <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-500 text-black"> </i></button>
             </div>
         </section>
 
@@ -117,7 +120,7 @@
                 <!-- text -->
                 <div>
                     <h1 class="bg-white rounded-3xl px-4 text-center w-max">
-                        About Us
+                        <i class="fa-solid fa-arrow-right"></i> About Us
                     </h1>
                     <h2 class="font-bold text-3xl max-w-sm py-4">
                         We design thoughtful, liveable spaces
@@ -163,7 +166,7 @@
                     <!-- title -->
                 <div class="text-center mx-96 px-8">
                     <h1 class="bg-white mx-64 rounded-3xl px-4 text-center w-max">
-                        How we works
+                        <i class="fa-solid fa-arrow-right"></i> How we works
                     </h1>
                     <h2 class="font-bold px-24 text-3xl py-4">
                         Our Works Process
@@ -226,11 +229,11 @@
 
         <!-- lets connect section -->
         <section>
-            <div class="bg-cover bg-[url('assets/bg.jpg')]">
+            <div class="bg-cover pb-16 bg-[url('assets/bg.jpg')]">
                 <!-- title -->
                 <div class="text-center mx-96 pt-16 px-8">
-                    <h1 class="bg-white mx-64 rounded-3xl px-4 text-center w-max">
-                        Let’s Connect
+                    <h1 class="bg-lime-300 mx-64 rounded-3xl px-4 text-center w-max">
+                        <i class="fa-solid fa-arrow-right"></i> Let’s Connect
                     </h1>
                     <h2 class="font-bold px-24 text-3xl py-4">
                         Let’s Discuss Next Project
@@ -251,19 +254,20 @@
                         <input type="text" placeholder="Email Number" class="input rounded-3xl w-full max-w-md" />
                     </div>
                     <input type="text" placeholder="Write your message here" class="placeholder:align-top placeholder:text-left input rounded-3xl w-full h-72" /> 
-                    <button class="btn my-4 w-full rounded-3xl">Send Mail</button>
+                    <button class="btn my-4 w-full bg-lime-300 rounded-3xl">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
                 </div>
             </div>
         </section>
 
         </main>
+
         <footer>
             <!-- whole -->
             <div class="bg-black text-white">
                 <!-- title -->
                 <div class="text-center pt-16">
                     <h1 class="font-bold text-2xl">
-                        Rinterio
+                        <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-300 text-black"> </i> Rinterio
                     </h1>
                     <p class="max-w-2xl pt-4 opacity-50 mx-96">
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
@@ -279,7 +283,7 @@
                 </div>
                 <!-- button -->
                 <div class="ml-64 mt-8 pb-20">
-                    <button class="btn rounded-3xl mx-96 px-8">Book Consult</button>
+                    <button class="btn rounded-3xl mx-96 px-8 bg-lime-300">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
                 </div>
             </div>
         </footer>
