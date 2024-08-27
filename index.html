@@ -11,38 +11,37 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     
         <!-- tailwind cdn -->
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+        <!--tailwind and daisyui cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
     
         <!-- tailwind script -->
         <script>
             tailwind.config = {
-              theme: {
-                extend: {
-                  colors: {
-                    sobuj: '#ABEF5F',
-                  },
-                },
-              },
-              daisyui: {
-                themes: false,},
-            }
-          </script>
-    
-        <!-- daisyui cdn -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
+                theme: {
+                    extend: {
+                        colors: {
+                            customPrimary: '#1D4ED8', 
+                            sobuj: '#ABEF5F',
+                            golapi: '#E7C1D3',
+                            holud: '#EFDA6E',
+                            sobuj2: '#A4DAC3',
+                            nil: '#77AAEA',
+        },},},};
+        </script>
     
         <!-- font awesome cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     </head>
-    
     <body>
         
         <header class="lg:mx-16 lg:my-4">
             <div class="navbar">
                 <div class="navbar-start">
-                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-300 text-black"> </i>
+                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-sobuj text-black"> </i>
                     <h1 class="text-xl pl-1"> Rinterio</h1>
                 </div>
                 
@@ -89,7 +88,7 @@
                         </svg>
                     </div>
     
-                    <button class="btn mx-8 bg-lime-300 rounded-3xl ">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
+                    <button class="btn mx-8 bg-sobuj rounded-3xl ">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
                 </div>
             </div>
         </header>
@@ -110,7 +109,7 @@
                 <p>
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
-                <button class="btn rounded-3xl bg-lime-300 my-4 mx-8">View Details <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-500 text-black"> </i></button>
+                <button class="btn rounded-3xl bg-sobuj bg-opacity-50 my-4 mx-8">View Details <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-500 text-black"> </i></button>
             </div>
         </section>
 
@@ -178,7 +177,7 @@
 
                 <!-- card -->
                 <div class="flex mx-40 pt-8 space-x-4">
-                    <div class="card bg-base-100 max-w-96">
+                    <div class="card bg-golapi max-w-96">
                         <figure>
                         <img
                             src="assets/concept.png" class="mr-36 pt-8"/>
@@ -189,7 +188,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-base-100 max-w-96">
+                    <div class="card bg-holud max-w-96">
                         <figure>
                         <img
                             src="assets/concept.png" class="mr-36 pt-8"/>
@@ -200,7 +199,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-base-100 max-w-96">
+                    <div class="card bg-sobuj2 max-w-96">
                         <figure>
                         <img
                             src="assets/concept.png" class="mr-36 pt-8"/>
@@ -211,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-base-100 max-w-96">
+                    <div class="card bg-nil max-w-96">
                         <figure>
                         <img
                             src="assets/concept.png" class="mr-36 pt-8"/>
@@ -227,12 +226,132 @@
             </div>
         </section>
 
+        <!-- porfolio section -->
+        <section>
+            <div class="pb-16">
+                <!-- title -->
+                <div class="text-center mx-96 pt-16 px-8">
+                    <h1 class="bg-sobuj bg-opacity-50 mx-48 opacity-80 rounded-3xl px-4 text-center w-max">
+                        <i class="fa-solid fa-arrow-right"></i> Explore our Latest works
+                    </h1>
+                    <h2 class="font-bold px-24 text-3xl py-4">
+                        Our Latest Portfolio
+                    </h2>
+                    <p class="max-w-4xl pb-4">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                </div>
+                <!-- cards images -->
+                <div class="w-3/4 justify-center mx-auto">
+                    <!-- div-1 -->
+                    <div class="flex space-x-4 mt-12">
+                        <!-- card -->
+                        <div class="flex bg-white p-4 border-2 rounded-xl max-w-4xl">
+                            <img src="assets/img1.png">
+                            <div class="px-4">
+                                <h1 class="font-bold text-xl py-4">
+                                    Commercial
+                                </h1>
+                                <p class="max-w-sm pb-4">
+                                    The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                                </p>
+                                <a href="#"> View Details <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-500 text-black"> </i></a>
+                            </div>
+                        </div>
+                        <!-- image -->
+                        <div class="p-4 bg-white border-2 rounded-xl">
+                            <img src="assets/img2.png">
+                        </div>
+                    </div>
+                    <!-- div-2 -->
+                    <div class="flex space-x-4 mt-8">
+                        <!-- image -->
+                        <div class="p-4 bg-white border-2 rounded-xl">
+                            <img src="assets/img3.png">
+                        </div>
+                        <!-- card -->
+                        <div class="flex bg-white max-w-xl p-4 border-2 rounded-xl">
+                            <img src="assets/img4.png">
+                            <div class="px-4">
+                                <h1 class="font-bold">
+                                    Commercial
+                                </h1>
+                                <p class="max-w-sm">
+                                    The barn house captivates with its blend of rustic charm and modern.
+                                </p>
+                                <a href="#"> View Details <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-500 text-black"> </i></a>
+                            </div>
+                        </div>
+                        <!-- image -->
+                        <div class="p-4 bg-white border-2 rounded-xl">
+                            <img src="assets/img5.png">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- faq section -->
+        <section>
+            <div class="my-16">
+                <!-- title -->
+                <h1 class="bg-sobuj bg-opacity-50 mx-64 justify-center mx-auto mb-4 rounded-3xl px-4 text-center w-max">
+                    <i class="fa-solid fa-arrow-right"></i> Your Queries
+                </h1>
+                <h1 class="font-bold text-3xl text-center">
+                    Frequently Asked Questions
+                </h1>
+                <!-- questions -->
+                <div class="mx-auto pt-12 justify-center max-w-5xl space-y-4">
+                    <div class="collapse collapse-arrow border-2">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What services do you offer?</div>
+                        <div class="collapse-content">
+                        <p class="opacity-50">We offer a range of services, including interior design, renovation, and commercial design solutions tailored to your needs.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow border-2">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">How do I get started with a project?</div>
+                        <div class="collapse-content">
+                        <p class="opacity-50">Simply contact us through our website, and we'll schedule a consultation to discuss your ideas and needs.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow border-2">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">How long does a typical project take?</div>
+                        <div class="collapse-content">
+                        <p class="opacity-50">The timeline depends on the scope of the project, but most designs are completed within 4-8 weeks.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow border-2">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">Do you work with a specific budget?</div>
+                        <div class="collapse-content">
+                        <p class="opacity-50">Yes, we can work within your specified budget to create a design that meets your needs without compromising on quality.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow border-2">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">Can I see examples of your previous work?</div>
+                        <div class="collapse-content">
+                        <p class="opacity-50">Absolutely! Visit our portfolio section to see examples of our completed projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- lets connect section -->
         <section>
             <div class="bg-cover pb-16 bg-[url('assets/bg.jpg')]">
                 <!-- title -->
                 <div class="text-center mx-96 pt-16 px-8">
-                    <h1 class="bg-lime-300 mx-64 rounded-3xl px-4 text-center w-max">
+                    <h1 class="bg-sobuj bg-opacity-50 mx-64 rounded-3xl px-4 text-center w-max">
                         <i class="fa-solid fa-arrow-right"></i> Let’s Connect
                     </h1>
                     <h2 class="font-bold px-24 text-3xl py-4">
@@ -254,7 +373,7 @@
                         <input type="text" placeholder="Email Number" class="input rounded-3xl w-full max-w-md" />
                     </div>
                     <input type="text" placeholder="Write your message here" class="placeholder:align-top placeholder:text-left input rounded-3xl w-full h-72" /> 
-                    <button class="btn my-4 w-full bg-lime-300 rounded-3xl">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
+                    <button class="btn my-4 w-full bg-sobuj rounded-3xl">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
                 </div>
             </div>
         </section>
@@ -267,7 +386,7 @@
                 <!-- title -->
                 <div class="text-center pt-16">
                     <h1 class="font-bold text-2xl">
-                        <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-lime-300 text-black"> </i> Rinterio
+                        <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-sobuj text-black"> </i> Rinterio
                     </h1>
                     <p class="max-w-2xl pt-4 opacity-50 mx-96">
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
@@ -283,9 +402,10 @@
                 </div>
                 <!-- button -->
                 <div class="ml-64 mt-8 pb-20">
-                    <button class="btn rounded-3xl mx-96 px-8 bg-lime-300">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
+                    <button class="btn rounded-3xl mx-96 px-8 bg-sobuj">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl p-1 w-auto bg-black text-white"> </i></button>
                 </div>
             </div>
         </footer>
+    
     </body>
 </html>
